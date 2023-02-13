@@ -1,0 +1,877 @@
+servers:
+    hub:
+        default:
+            default: true
+            permissions:
+            - modifyworld.*
+            - -litebans.notify.broadcast
+            prefix: '&f&l<&7Trainee&f&l>&7'
+        VIP:
+            permissions:
+            - hub.cannon
+            - arkhamchat.vip
+            - cosmic.vip1
+            - -litebans.notify.broadcast
+            prefix: '&f&l<&8&lVIP&f&l>&8'
+        VIP1:
+            inheritance:
+            - VIP
+            permissions:
+            - hub.cannon
+            - arkhamchat.vip
+            - cosmic.vip1
+            - -litebans.notify.broadcast
+            prefix: '&f&l<&8&lVIP&f&l>&8'
+        VIP2:
+            inheritance:
+            - VIP1
+            permissions:
+            - cosmic.vip2
+            - -litebans.notify.broadcast
+            prefix: '&f&l<&b&lVIP+&f&l>&b'
+        VIP3:
+            inheritance:
+            - VIP2
+            permissions:
+            - cosmic.vip3
+            - -litebans.notify.broadcast
+            prefix: '&f&l<&9&lVIP++&f&l>&9'
+        VIP4:
+            inheritance:
+            - VIP3
+            permissions:
+            - cosmic.vip4
+            - -litebans.notify.broadcast
+            prefix: '&f&l<&6&lVIP+++&f&l>&6'
+        VIP5:
+            inheritance:
+            - VIP4
+            permissions:
+            - cosmic.vip5
+            - -litebans.notify.broadcast
+            prefix: '&f&l<&e&lVIP++++&f&l>&e'
+        VIP6:
+            inheritance:
+            - VIP5
+            permissions:
+            - cosmic.vip6
+            - essentials.fly
+            - -litebans.notify.broadcast
+            prefix: '&f&l<&c&lVIP+++++&f&l>&c'
+        VIPX:
+            inheritance:
+            - VIP6
+            permissions:
+            - cosmic.vip6
+            - essentials.fly
+            - -litebans.notify.broadcast
+            prefix: '&d&l<&5&lVIP X&d&l>&5'
+        helper:
+            prefix: '&f&l<&d&lHelper&f&l>&d'
+            inheritance:
+            - VIP6
+            permissions:
+            - staff.queue.bypass
+            - litebans.mute
+            - staff.sc
+            - staff.chat
+            - litebans.tempmute
+            - litebans.warnings
+            - litebans.checkban
+            - litebans.clearchat
+            - litebans.mutechat
+            - litebans.notify.mute
+            - litebans.notify.muted
+            - litebans.unmute.own
+            - litebans.notify
+            - litebans.warn
+            - staff.notify
+            - litebans.unwarn.own
+            - litebans.kick
+            - bm.command.bminfo
+            - bm.command.bminfo.others
+            - bm.command.bminfo.history.bans
+            - bm.command.bminfo.history.kicks
+            - bm.command.bminfo.history.mutes
+            - bm.command.bminfo.history.notes
+            - bm.command.bminfo.history.warnings
+            - bm.command.bminfo.playerstats
+            - bm.command.bminfo.website
+            - arkhamchat.vip
+            - bm.command.bminfo
+            - bm.command.kick
+            - bm.command.tempmute
+            - bm.command.unmute
+            - bm.command.warn
+            - essentials.gc
+            - essentials.kick
+            - essentials.realname
+            - essentials.unmute
+            - hub.bypass.hide
+            - simplechat.admin
+            - bm.notify.kick
+            - bm.notify.mute
+            - bm.notify.tempban
+            - bm.notify.tempmute
+            - bm.notify.unban
+            - bm.notify.unmute
+            - bm.notify.warn
+            - essentials.joinfullserver
+            - essentials.afk
+            - essentials.afk.kickexempt
+        mod:
+            prefix: '&f&l<&3&lMod&f&l>&3'
+            inheritance:
+            - helper
+            permissions:
+            - cosmicseen.seen.alts
+            - arkkit.teleportsanity.ignore
+            - bm.command.ban.offline
+            - litebans.tempban
+            - litebans.unban.own
+            - bm.command.tempban.offline
+            - bm.command.ban
+            - bm.command.banoffline
+            - bm.command.bminfo
+            - bm.command.kick
+            - bm.command.mute
+            - bm.command.tempban
+            - bm.command.tempmute
+            - bm.command.unmute
+            - bm.command.warn
+            - essentials.joinfullserver
+        banteam:
+            prefix: '&f&l<&6&lBanTeam&f&l>&6'
+            inheritance:
+            - mod
+            permissions:
+            - cosmicpvp.command.envoy
+            - vanish.standard
+            - vanish.silentchests
+            - vanish.silentjoin
+            - vanish.toggle.all
+            - prorevive.revive
+            - cosmicreport.view
+            - litebans.ban
+            - litebans.unban.own
+            - litebans.unban
+            - cosmicreport.alerts
+            - cosmicseen.altban
+            - cosmicseen.seen.alts
+            - arkkit.staff.hidden
+            - essentials.socialspy
+            - factions.chatspy
+            - factions.bypass
+            - factions.*
+            - essentials.heal
+            - essentials.heal.cooldown.bypass
+            - essentials.feed.cooldown.bypass
+            - essentials.spawnmob.spider
+            - essentials.fly
+            - essentials.invsee
+            - essentials.einvsee
+            - essentials.invsee.modify
+            - essentials.einvsee.modify
+            - essentials.gamemode
+            - essentials.gamemode.survival
+            - essentials.gamemode.creative
+            - essentials.feed
+            - essentials.vanish
+            - worldedit.navigation.thru.command
+            - essentials.god
+            - nocheatplus.command.notify
+            - essentials.spawnmob
+            - essentials.fly.noparticles
+            - essentials.clearinventory
+            - essentials.speed
+            - essentials.invsee.preventmodify
+            - arkkit.xpbotdtles.immune
+            - staff.*
+            - shiva.admin
+            - shiva.check
+            - shiva.cps
+            - shiva.alert
+            - essentials.tppos
+            - essentials.invsee
+            - essentials.tp
+            - essentials.tp.others
+            - essentials.tpo
+            - essentials.tphere
+            - essentials.tpohere
+        admin:
+            prefix: '&f&l<&c&lAdmin&f&l>&c'
+            inheritance:
+            - mod
+            permissions:
+            - '*'
+            - vanish.*
+            - -shiva.notify
+            - -shiva.modnotify
+        manager:
+            prefix: '&f&l<&4&lManager&f&l>&4'
+            inheritance:
+            - mod
+            permissions:
+            - '*'
+            - vanish.*
+            - -shiva.notify
+            - -shiva.modnotify
+        developer:
+            prefix: '&f&l<&d&lDeveloper&f&l>&d'
+            inheritance:
+            - admin
+            permissions:
+            - '*'
+            - 'bm.command.unban'
+        owner:
+            prefix: '&f&l<&4&lOwner&f&l>&4'
+            permissions:
+            - '*'
+            - 'bm.command.unban'
+    factions:
+        default:
+            default: true
+            permissions:
+            - clientcomms.node.freeroam
+            - clientcomms.node.breadcrumbs
+            - schematica.save
+            - schematica.load
+            - essentials.gc
+            - essentials.exp
+            - auction.limit.1
+            - essentials.warps.Crates
+            - essentials.warps.Desert
+            - essentials.realname
+            - auction.bid
+            - auction.info
+            - wildpvp.use
+            - SlotBot.command
+            - silkspawners.silkdrop.*
+            - clientcomms.node.freeroam
+            - clientcomms.node.breadcrumbs
+            - essentials.help.essentials
+            - schematica.save
+            - schematica.load
+            - essentials.gc
+            - essentials.exp
+            - auction.limit.1
+            - -mcmmo.ability.unarmed.berserk
+            - -mcmmo.commands.ptp
+            - auction.bid
+            - auction.info
+            - genbucket.command.menu
+            - auction.start
+            - clientcomms.bypass
+            - essentials.realname
+            - betterenderchest.user.craft
+            - betterenderchest.user.destroy
+            - betterenderchest.user.open.privatechest
+            - betterenderchest.user.place
+            - bm.notify
+            - bukkit.commands.tps
+            - enderpearl.use
+            - essentials.balance
+            - essentials.balance.others
+            - essentials.balancetop
+            - essentials.chat.url
+            - essentials.delhome
+            - essentials.home
+            - essentials.kit
+            - essentials.kits.trainee
+            - essentials.kits.carnage
+            - itemDuplicator
+            - essentials.list
+            - essentials.motd
+            - essentials.msg
+            - essentials.msg.url
+            - essentials.pay
+            - chestcommands.open.bookshop.yml
+            - essentials.ping
+            - essentials.rules
+            - essentials.seen
+            - essentials.sethome
+            - essentials.signs.use.*
+            - essentials.spawn
+            - essentials.suicide
+            - essentials.tpa
+            - essentials.tpaccept
+            - essentials.tpdeny
+            - essentials.warp
+            - essentials.warp.list
+            - essentials.warps.shop
+            - essentials.warps.spawn
+            - factions.kit.fullplayer
+            - -mcmmo.commands.party
+            - mcmmo.ability.acrobatics.*
+            - mcmmo.ability.archery.*
+            - mcmmo.ability.blastmining.*
+            - mcmmo.ability.excavation.*
+            - mcmmo.ability.fishing.*
+            - mcmmo.ability.herbalism.*
+            - mcmmo.ability.mining.*
+            - mcmmo.ability.repair.*
+            - mcmmo.ability.taming.*
+            - mcmmo.ability.woodcutting.*
+            - mcmmo.commands.inspect.offline
+            - modifyworld.*
+            - nametag.group.default
+            - redeemMCMMO.credits
+            - redeemMCMMO.redeem
+            - redeemMCMMO.rmhelp
+            - silkspawners.info
+            - silkspawners.place.*
+            - upack.help
+            - upack.list
+            - upack.menu
+            - upack.off
+            - playervaults.amount.1
+            - auction.start
+            - betterenderchest.user.craft
+            - betterenderchest.user.destroy
+            - betterenderchest.user.open.privatechest
+            - betterenderchest.user.place
+            - bm.notify
+            - bukkit.commands.tps
+            - enderpearl.use
+            - essentials.balance
+            - essentials.balance.others
+            - essentials.balancetop
+            - essentials.chat.url
+            - essentials.delhome
+            - essentials.home
+            - essentials.kit
+            - essentials.Kits.starter
+            - essentials.list
+            - essentials.motd
+            - essentials.msg
+            - essentials.msg.url
+            - essentials.pay
+            - essentials.ping
+            - essentials.rules
+            - essentials.seen
+            - essentials.sethome
+            - essentials.signs.use.*
+            - essentials.spawn
+            - essentials.suicide
+            - essentials.tpa
+            - essentials.tpaccept
+            - essentials.tpdeny
+            - essentials.warp
+            - essentials.warp.list
+            - essentials.warps.shop
+            - essentials.warps.spawn
+            - factions.kit.fullplayer
+            - mcmmo.ability.acrobatics.*
+            - mcmmo.ability.archery.*
+            - mcmmo.ability.blastmining.*
+            - mcmmo.ability.excavation.*
+            - mcmmo.ability.fishing.*
+            - mcmmo.ability.herbalism.*
+            - mcmmo.ability.mining.*
+            - mcmmo.ability.repair.*
+            - mcmmo.ability.taming.*
+            - mcmmo.ability.woodcutting.*
+            - mcmmo.commands.inspect.offline
+            - modifyworld.*
+            - nametag.group.default
+            - redeemMCMMO.credits
+            - redeemMCMMO.redeem
+            - redeemMCMMO.rmhelp
+            - silkspawners.info
+            - silkspawners.place.*
+            - silkspawners.silkdrop.*
+            - upack.help
+            - upack.list
+            - upack.menu
+            - upack.off
+            - playervaults.amount.1
+            - genbucket
+            - genbucket.*
+            - -litebans.notify.broadcast
+            prefix: '&f&l<&7Trainee&f&l>&7'
+        orb:
+            prefix: '&f&l<&8Orb&f&l>&8'
+            permissions:
+            - -auction.limit.1
+            - auction.limit.2
+            - betterenderchest.slots.upgrade1
+            - booscooldowns.nocooldown./tpa
+            - chatlimiter.vip
+            - cosmicpvp.senditem
+            - cosmicpvp.vip
+            - showcasegui.showcase
+            - enchantments.max.3
+            - essentials.back
+            - essentials.clearinventory
+            - essentials.ignore
+            - essentials.joinfullserver
+            - essentials.kits.orb
+            - essentials.near
+            - essentials.ptime
+            - essentials.sell
+            - essentials.sethome.multiple.orb
+            - essentials.tpahere
+            - essentials.spawn
+            - essentials.warps.Crates
+            - essentials.warps.Desert
+            - playervaults.amount.3
+            - playervaults.size.6
+            - silkspawners.silkdrop.*
+            - trade.activate
+            - vip.join
+        fiend:
+            prefix: '&f&l<&bFiend&f&l>&b'
+            inheritance:
+            - orb
+            permissions:
+            - -auction.limit.1
+            - -auction.limit.2
+            - auction.limit.3
+            - booscooldowns.nocooldown./tpa
+            - enchantments.max.6
+            - essentials.feed
+            - essentials.hat
+            - essentials.kits.fiend
+            - essentials.repair
+            - essentials.sethome.multiple.fiend
+            - mcmmo.ability.acrobatics.dodge
+            - mcmmo.perks.xp.double
+            - playervaults.amount.6
+        ghoul:
+            prefix: '&f&l<&9Ghoul&f&l>&9'
+            inheritance:
+            - fiend
+            permissions:
+            - -auction.limit.1
+            - -auction.limit.2
+            - -auction.limit.3
+            - auction.limit.4
+            - enchantments.max.9
+            - essentials.kits.ghoul
+            - essentials.lightning
+            - essentials.nick
+            - essentials.sethome.multiple.ghoul
+            - playervaults.amount.9
+            - playervaults.workbench
+            - autocrafttnt.command.tnt
+        poltergeist:
+            prefix: '&f&l<&6Poltergeist&f&l>&6'
+            inheritance:
+            - ghoul
+            permissions:
+            - -auction.limit.1
+            - -auction.limit.2
+            - -auction.limit.3
+            - -auction.limit.4
+            - auction.limit.5
+            - arkkit.command_cooldowns.wilderness.1mincd
+            - enchantments.max.12
+            - essentials.kits.poltergeist
+            - essentials.sethome.multiple.poltergeist
+            - playervaults.amount.12
+            - essentials.heal
+            - arkkit.command.fill
+        phantom:
+            prefix: '&f&l<&e&lPhantom&f&l>&e'
+            inheritance:
+            - poltergeist
+            permissions:
+            - -auction.limit.1
+            - -auction.limit.2
+            - -auction.limit.3
+            - -auction.limit.4
+            - essentials.near
+            - essentials.workbench
+            - essentials.feed
+            - -auction.limit.5
+            - essentials.clearinventory
+            - essentials.repair.hand
+            - essentials.craft
+            - essentials.weather
+            - essentials.tpahere
+            - essentials.ignore
+            - silkspawners.silkdrop.*
+            - trade.activate
+            - playervaults.workbench
+            - essentials.ptime
+            - essentials.repair
+            - cosmicpvp.senditem
+            - essentials.back
+            - essentials.sell
+            - essentials.fly
+            - auction.limit.6
+            - auction.limit.1
+            - auction.limit.6
+            - enchantments.max.20
+            - cosmicpvp.command.envoy
+            - essentials.fly
+            - essentials.heal
+            - essentials.kits.phantom
+            - essentials.kit.phantom
+            - essentials.sethome.multiple.phantom
+            - mcmmo.perks.xp.triple
+            - playervaults.amount.25
+            - arkhamcooldowns.bypass.feed
+            - greatkits.kits.default
+            - greatkits.kits.orb
+            - greatkits.kits.fiend
+            - greatkits.kits.ghoul
+            - greatkits.kits.phantom
+            - enchantments.max.16
+            - cosmicpvp.command.envoy
+            - essentials.fly
+            - essentials.heal
+            - essentials.sethome.multiple.phantom
+            - mcmmo.perks.xp.triple
+            - playervaults.amount.15
+            - arkhamcooldowns.bypass.feed
+        phantom_plus:
+            prefix: '&f&l<&e&lPhantom&6&l+&f&l>&e'
+            inheritance:
+            - phantom
+            permissions:
+            - -auction.limit.1
+            - -auction.limit.2
+            - -auction.limit.3
+            - essentials.kits.phantom_plus
+            - essentials.kit.phantom_plus
+            - -auction.limit.4
+            - auction.limit.8
+            - arkkit.command.fill
+            - essentials.repair.all
+            - arkkit.command_cooldowns.heal.1mincd
+            - playervaults.amount.40
+            - arkhamcooldowns.bypass.feed
+            - essentials.sethome.multiple.phantom_plus
+            - essentials.feed.others
+            - essentials.heal.fast
+            - mcmmo.perks.xp.quadruple
+            - essentials.repair.armor
+            - essentials.kits.phantom_plus
+            - essentials.warps.Desert
+            - essentials.warps.Crates
+            - cosmicpvp.heroic
+            - essentials.enderchest
+            - betterenderchest.command.openinv.self
+            - betterenderchest.command.viewinv.self
+            - -auction.limit.5
+            - -auction.limit.6
+            - auction.limit.8
+            - enchantments.max.16
+            - arkkit.command_cooldowns.heal.1mincd
+            - playervaults.amount.25
+            - arkhamcooldowns.bypass.feed
+            - essentials.sethome.multiple.phantom_plus
+            - essentials.feed.others
+            - essentials.heal.fast
+            - greatkits.kits.phantom_plus
+            - mcmmo.perks.xp.quadruple
+            - essentials.kits.heroic
+            - cosmicpvp.heroic
+            - essentials.enderchest
+            - betterenderchest.command.openinv.self
+            - betterenderchest.command.viewinv.self
+            - essentials.joinfullserver
+        reforged:
+            prefix: '&3&l<&b&lReforged&3&l>&b'
+            inheritance:
+            - phantom_plus
+            permissions:
+            - enchantments.max.16
+            - playervaults.amount.50
+            - greatkits.kits.reforged
+            - essentials.repair.all
+            - essentials.warps.reforged
+            - essentials.sethome.multiple.reforged
+        media:
+            prefix: '&f&l<&d&lMedia&f&l>&d'
+            inheritance:
+            - reforged
+            permissions:
+            permissions:
+            - setchannel.youtube
+            - greatkits.kits.Media
+        helper:
+            prefix: '&f&l<&d&lHelper&f&l>&d'
+            inheritance:
+            - reforged
+            permissions:
+            - staff.queue.bypass
+            - litebans.mute
+            - staff.sc
+            - staff.chat
+            - litebans.tempmute
+            - litebans.warnings
+            - litebans.checkban
+            - litebans.clearchat
+            - litebans.mutechat
+            - litebans.notify.mute
+            - litebans.notify.muted
+            - litebans.unmute.own
+            - litebans.notify
+            - litebans.warn
+            - staff.notify
+            - litebans.unwarn.own
+            - litebans.kick
+            - bm.command.bminfo
+            - bm.command.bminfo.others
+            - bm.command.bminfo.history.bans
+            - bm.command.bminfo.history.kicks
+            - bm.command.bminfo.history.mutes
+            - bm.command.bminfo.history.notes
+            - bm.command.bminfo.history.warnings
+            - bm.command.bminfo.playerstats
+            - bm.command.bminfo.website
+            - arkhamchat.vip
+            - bm.command.bminfo
+            - bm.command.kick
+            - bm.command.tempmute
+            - bm.command.unmute
+            - bm.command.warn
+            - essentials.gc
+            - essentials.kick
+            - essentials.realname
+            - essentials.unmute
+            - hub.bypass.hide
+            - simplechat.admin
+            - bm.notify.kick
+            - bm.notify.mute
+            - bm.notify.tempban
+            - bm.notify.tempmute
+            - bm.notify.unban
+            - bm.notify.unmute
+            - bm.notify.warn
+            - essentials.joinfullserver
+            - essentials.afk
+            - essentials.afk.kickexempt
+        mod:
+            prefix: '&f&l<&3&lMod&f&l>&3'
+            inheritance:
+            - helper
+            permissions:
+            - cosmicseen.seen.alts
+            - arkkit.teleportsanity.ignore
+            - bm.command.ban.offline
+            - litebans.tempban
+            - litebans.unban.own
+            - bm.command.tempban.offline
+            - bm.command.ban
+            - bm.command.banoffline
+            - bm.command.bminfo
+            - bm.command.kick
+            - bm.command.mute
+            - bm.command.tempban
+            - bm.command.tempmute
+            - bm.command.unmute
+            - bm.command.warn
+            - essentials.joinfullserver
+        banteam:
+            prefix: '&f&l<&6&lBanTeam&f&l>&6'
+            inheritance:
+            - mod
+            permissions:
+            - cosmicpvp.command.envoy
+            - vanish.standard
+            - vanish.silentchests
+            - vanish.silentjoin
+            - vanish.toggle.all
+            - prorevive.revive
+            - cosmicreport.view
+            - litebans.ban
+            - litebans.unban.own
+            - litebans.unban
+            - cosmicreport.alerts
+            - cosmicseen.altban
+            - cosmicseen.seen.alts
+            - arkkit.staff.hidden
+            - essentials.socialspy
+            - factions.chatspy
+            - factions.bypass
+            - factions.*
+            - essentials.heal
+            - essentials.heal.cooldown.bypass
+            - essentials.feed.cooldown.bypass
+            - essentials.spawnmob.spider
+            - essentials.fly
+            - essentials.invsee
+            - essentials.einvsee
+            - essentials.invsee.modify
+            - essentials.einvsee.modify
+            - essentials.gamemode
+            - essentials.gamemode.survival
+            - essentials.gamemode.creative
+            - essentials.feed
+            - essentials.vanish
+            - worldedit.navigation.thru.command
+            - essentials.god
+            - nocheatplus.command.notify
+            - essentials.spawnmob
+            - essentials.fly.noparticles
+            - essentials.clearinventory
+            - essentials.speed
+            - essentials.invsee.preventmodify
+            - arkkit.xpbotdtles.immune
+            - staff.*
+            - shiva.admin
+            - shiva.check
+            - shiva.cps
+            - shiva.alert
+            - essentials.tppos
+            - essentials.invsee
+            - essentials.tp
+            - essentials.tp.others
+            - essentials.tpo
+            - essentials.tphere
+            - essentials.tpohere
+        admin:
+            prefix: '&f&l<&c&lAdmin&f&l>&c'
+            inheritance:
+            - banteam
+            permissions:
+            - '*'
+            - vanish.*
+            - -shiva.notify
+            - -shiva.modnotify
+        manager:
+            prefix: '&f&l<&4&lManager&f&l>&4'
+            inheritance:
+            - admin
+            permissions:
+            - '*'
+            - vanish.*
+            - -shiva.notify
+            - -shiva.modnotify
+        developer:
+            prefix: '&f&l<&d&lDeveloper&f&l>&d'
+            inheritance:
+            - manager
+            permissions:
+            - '*'
+            - 'bm.command.unban'
+        owner:
+            prefix: '&f&l<&4&lOwner&f&l>&4'
+            permissions:
+            - '*'
+            - 'minebans.commands.unban'
+            - 'bm.command.unban'
+    Dungeons1:
+        default:
+            default: true
+            permissions:
+            - modifyworld.*
+            prefix: '&f&l<&6Dungeoneer&f&l>&6'
+        daily:
+            prefix: '&f&l<&aDaily&f&l>&a'
+            permissions:
+            - modifyworld.*
+        weekly:
+            prefix: '&f&l<&2Weekly&f&l>&a'
+            permissions:
+            - modifyworld.*
+        monthly:
+            prefix: '&f&l<&bMonthly&f&l>&b'
+            permissions:
+            - modifyworld.*
+        dungeonmaster:
+            prefix: '&c&l<&4&lDungeon Master&c&l>&4'
+            permissions:
+            - modifyworld.* 
+        helper:
+            prefix: '&f&l<&d&Staff&f&l>&d'
+            permissions:
+            - staff.queue.bypass
+            - minebans.alerts
+            - staff.sc
+            - staff.chat
+            - staff.notify
+            - bm.command.bminfo
+            - bm.command.bminfo.others
+            - bm.command.bminfo.history.bans
+            - bm.command.bminfo.history.kicks
+            - bm.command.bminfo.history.mutes
+            - bm.command.bminfo.history.notes
+            - bm.command.bminfo.history.warnings
+            - bm.command.bminfo.playerstats
+            - bm.command.bminfo.alts
+            - bm.command.bminfo.website
+            - arkhamchat.vip
+            - bm.command.bminfo
+            - bm.command.kick
+            - bm.command.tempmute
+            - bm.command.unmute
+            - bm.command.warn
+            - essentials.gc
+            - essentials.kick
+            - essentials.realname
+            - essentials.unmute
+            - hub.bypass.hide
+            - simplechat.admin
+            - bm.notify.kick
+            - bm.notify.mute
+            - bm.notify.tempban
+            - bm.notify.tempmute
+            - bm.notify.unban
+            - bm.notify.unmute
+            - bm.notify.warn
+            - essentials.joinfullserver
+            - essentials.afk
+            - essentials.afk.kickexempt
+        banteam:
+            prefix: '&f&l<&6&lBanTeam&f&l>&6'
+            permissions:
+            - cosmicpvp.command.envoy
+            - coreprotect.lookup.chat
+            - coreprotect.lookup
+            - coreprotect.lookup.username
+            - coreprotect.lookup.block
+            - coreprotect.lookup.session
+            - coreprotect.inspect
+            - vanish.standard
+            - vanish.silentchests
+            - vanish.silentjoin
+            - vanish.toggle.all
+            - cosmicreport.view
+            - cosmicreport.alerts
+            - cosmicseen.altban
+            - cosmicseen.seen.alts
+            - arkkit.staff.hidden
+            - essentials.socialspy
+            - factions.chatspy
+            - essentials.heal
+            - essentials.heal.cooldown.bypass
+            - essentials.tp.others
+            - essentials.feed.cooldown.bypass
+            - essentials.spawnmob.spider
+            - essentials.tpo
+            - essentials.fly
+            - essentials.invsee
+            - essentials.feed
+            - essentials.vanish
+            - worldedit.navigation.thru.command
+            - essentials.god
+            - nocheatplus.command.notify
+            - essentials.spawnmob
+            - essentials.fly.noparticles
+            - essentials.clearinventory
+            - essentials.speed
+            - essentials.invsee.preventmodify
+            - arkkit.xpbottles.immune
+            - staff.*
+            - shiva.admin
+            - shiva.check
+            - shiva.cps
+            - shiva.alert
+            - essentials.tppos
+        admin:
+            prefix: '&f&l<&c&lAdmin&f&l>&c'
+            permissions:
+            - vanish.*
+            - -shiva.notify
+            - -shiva.modnotify
+            - essentials.gamemode.creative
+            - essentials.gamemode.survival
+            - 
+        owner:
+            prefix: '&f&l<&5&lOwner&f&l>&5'
+            permissions:
+            - '*'         
